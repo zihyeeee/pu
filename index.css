@@ -1,0 +1,68 @@
+@charset "uft-8";
+
+body{position: relative; width: 100%; font-size: 14px; margin: 0 auto; padding: 0; box-sizing: border-box; overflow-x: hidden;}
+header, section, p, div, span, ul, li, a, input, img{margin: 0; padding: 0; }
+ul li{list-style: none;}
+a:link,
+a:focus{text-decoration: none; color: #222;}
+img, button, input{vertical-align: middle; border: 0;}
+
+.in_wide{width: 1400px; margin: 0 auto;}
+
+header{z-index: 999; background-color: #fff; width: 100%;}
+.issue{background-color: black; height: 32px; line-height: 32px;}
+.issue a{color: #fff; text-align: center;}
+.issue span{color: rgb(255, 230, 0);}
+
+.gnb_wrap{position: relative;height: 44px; border: 2px solid #d9d9d9; padding: 1% 2%;}
+.gnb_wrap a{display: block; height: 44px;float: left;} 
+.gnb{width: 60%;float: left; box-sizing: border-box; height: 44px; line-height: 44px;}
+.gnb ul li.deth1{float: left;}
+.gnb ul li.deth1 > ul{display: none; overflow: hidden; position: absolute;
+top: 74px; left: 0; width: 100%;}
+.gnb ul li.deth1 > span{width: 100%; height:64px; display: inline-block; margin: 0 0 0 20px; font-weight: bold; font-size: 1.4rem; color: #222; cursor: pointer; position: relative;}
+.gnb ul li.deth1 > span:after{content: ''; width: 5px; height: 5px; background-color: rgb(53, 98, 194); position: absolute; top: -8px; left: 5px; border-radius: 100%; display: none;}
+.gnb ul li.deth1 > span:hover:after{display: block; animation: move 0.7s forwards;}
+@keyframes move{
+    0%{top:-8px; opacity: 0.2;}
+    100%{top:4px; opacity: 1;}
+}
+
+.gnb ul li.deth2{float: left; width: 18%; text-align: center;}
+.gnb ul li.deth2 span{font-weight: bold; font-size: 1.1rem; color: rgb(53, 98, 194);}
+.gnb ul li.deth2:first-child{margin-left: 8%;}
+.gnb ul li ul.on{display: block; z-index: 88; background-color: rgb(244, 246, 255); padding-bottom: 12px; box-shadow: 5px 0 7px rgba(0,0,0,0.3);}
+
+.gnb ul li.deth3:hover{color: rgb(65, 172, 38); cursor: pointer;}
+
+.user{position: relative; width: 20%; float: right;}
+.user a{display: block; height: 22px;}
+.user ul{overflow: hidden; width: 100%;}
+.user ul li{float: left; width: 25%; margin-bottom: 3px;}
+.user ul li a{width: 100%; text-align: right;}
+.user .search_wrap{display: flex; justify-content: right;}
+.user .search_wrap input{border-bottom: 1px solid #222; width: 33%; margin-right: 9%;}
+.user .search_wrap .remove{cursor: pointer; text-indent: -999em; line-height: 0; font-size: 0; height: 0;}
+.user .search_wrap .remove::after{content: ''; position: absolute; top: 26px; right: 42px; border: 2px solid #222; width: 14px; height: 14px; border-radius: 10px;}
+.user .search_wrap .remove::before{content: ''; position: absolute; top: 35px; right: 38px; background-color: #222; width: 2px; height: 14px; transform: rotate(-58deg);}
+.user .search_wrap img{margin-top: -5px;}
+
+.content{position: relative; width: 100%; margin-top: 108px;}
+.main_pam .swiper-container{background-color: #fff; width: 100%; height: 479px; padding: 20px 0;}
+.main_pam .swiper-wrapper li{width: 304px !important;}
+.main_pam .swiper-wrapper li img{width: 350px;}
+
+.con01{position: relative; margin-top: 200px;}
+.con01 .con01_tit{text-align: center; padding-bottom: 8%;}
+.con01 .con01_tit p{font-size: 2.4rem; font-weight: bold; text-align: center; margin-bottom: 15px;}
+.con01 .con01_tit .sub_tit{font-size: 1rem; color: #949494; font-weight: inherit; margin: 20px 0;}
+.con01 .con01_tit .con01_deco{position: relative; margin-left: 50%; transform: translateX(-50%); width: 80px; height: 8px; background-color: rgb(65, 172, 38);}
+.con01 .con01_tit .con01_deco::before{content: ''; width: 40px; height: 1px; position: absolute; background-color: blue; top: -8px; left: -10px;}
+.con01 .con01_tit .con01_deco::after{}
+.con01 .con01_tit ul{display: flex; justify-content: space-around; margin-bottom: 28px;}
+.con01 .con01_tit ul li{width: 238px; height: 310px; overflow: hidden;}
+.con01 .con01_tit ul li a{display: block;}
+.con01 .con01_tit ul li a:hover{transform: scale(1.1); transition: all 0.9s ease-in-out;}
+.con01 .con01_tit .bot_cont{display: block; width: 1360px; overflow: hidden; margin: 0 auto;}
+.con01 .con01_tit .bot_cont img{width: 1360px;}
+.con01 .con01_tit .bot_img:hover{transform: scale(1.1); transition: all 0.9s ease-in-out;}
