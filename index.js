@@ -53,12 +53,13 @@ $(function(){
         
         })
 
-        // header
-        let winTop = $(window).scrollTop(),
-            headerTop = $('#header').offset().top;
-        
+        // header        
         $(window).scroll(function(){
-            if(winTop > headerTop) {
+            let winTop = $(window).scrollTop();
+            let headerTop = $('#header').offset().top;
+            console.log(headerTop)
+
+            if(winTop >= 0) {
                 $('#header').css('position','fixed');
                 $('#header').css('top','0');
             } else {

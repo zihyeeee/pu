@@ -66,3 +66,14 @@ top: 74px; left: 0; width: 100%;}
 .con01 .con01_tit .bot_cont{display: block; width: 1360px; overflow: hidden; margin: 0 auto;}
 .con01 .con01_tit .bot_cont img{width: 1360px;}
 .con01 .con01_tit .bot_img:hover{transform: scale(1.1); transition: all 0.9s ease-in-out;}
+
+.con02{background-color: hsl(216, 100%, 97%); margin-bottom: 4%;}
+.con02 .in_wide{width: 1400px; display: flex; padding: 2%;}
+.con02 p{width: 20%; font-size: 2rem; font-weight: bold; margin-top: 11.5%;}
+.bx-viewport{height: 390px !important;}
+.con02 .bx-wrapper{background: none; border: none; box-shadow: none; max-width: 3600px !important;}
+.con02 .bx-wrapper li{background-color: #fff; height: 100%; margin-right: 14px !important; box-sizing: border-box;}
+.con02 .bxslider li .item_box{width: 90%; margin: 0 auto;}
+.con02 .bxslider li .item_box span{width: 20%; height: 1.4vw; line-height: 1.4vw; border-radius: 0.5vw; margin-top: 4%; display: block; text-align: center; background-color: #c0c0c0; color: #fff; font-size: 1.2rem;}
+.con02 .bxslider li .item_box img{}
+.con02 .bxslider li .item_box .item_info{padding: 2% 0 5%;}
