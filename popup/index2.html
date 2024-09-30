@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>popup</title>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="index2.js"></script>
+    <link rel="stylesheet" href="index2.css">
+</head>
+
+<body>
+    <div class="pop_evt">
+        <div class="bg" onclick="$(this).parents('.pop_evt').fadeOut();"></div>
+        <div class="pop_wrap po_r">
+            <a class="close_btn" href="javascript:" onclick="$(this).parents('.pop_evt').fadeOut();">닫기</a>
+            <div class="tag">
+                <img src="../img/img1.png" alt="">
+                <p>
+                    유튜브 누적조회수 </br>
+                    <span>500만뷰</span> </br>
+                    돌파
+                </p>
+            </div>
+    
+            <div class="main_pop po_r">
+                <div class="pop_top">
+                    <h2>토빡남 김진태</h2>
+                    <p>Part 5,6 빡살 라이브 특강</p>
+                    <p class="under_f">토익 Part 5,6에 100% 출제되는 문제 총정리</p>
+                    <img src="../img/img4.png" alt="">
+                </div>
+    
+                <div class="pop_date po_r">
+                    <p class="date">
+                        <span>일정</span>
+                        7/29(월) 19:00 ~ 20:30
+                    </p>
+                    <p class="date">
+                        <span>장소</span>
+                        유튜브 라이브로 진행
+                    </p>
+                    <p class="add_info">
+                        참석자 전원 </br>
+                        <span>토익 빈출어휘집 100% 무료</span>
+                    </p>
+                    <img src="../img/teacher.png" alt="">
+                </div>
+    
+                <div class="subm_wrap">
+                    <table>
+                        <tr>
+                            <th>이름</th>
+                            <td>
+                                <input type="text" value="" id="name" name="name">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>전화번호</th>
+                            <td>
+                                <input type="text" value="" id="phone1"> -
+                                <input type="text" value="" id="phone2"> -
+                                <input type="text" value="" id="phone3">
+                            </td>
+                        </tr>
+                    </table>
+    
+                    <ul class="agree_wrap">
+                        <li>
+                            <input type="checkbox" id="all_agree">
+                            <label for="all_agree">모두 동의합니다.</label>
+                            <a href="javascript:" class="more_info">자세히보기</a>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="agree1" class="agree_ck" name="agree">
+                            <label for="agree1">개인정보 수집 동의합니다. (필수)</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="agree2" class="agree_ck" name="agree">
+                            <label for="agree2">예약 문자 동의합니다. (필수)</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="agree3" class="agree_ck" name="agree">
+                            <label for="agree3">14세 이상입니다.</label>
+                        </li>
+                    </ul>
+    
+                    <div class="info_wrap">
+                        <div>
+                            ■ 개인정보 수집동의 안내 </br></br>
+        
+                            1. 개인정보 수집 및 이용 목적</br>
+                            1) 7/29(월) 빡살 라이브특강 신청에 따른 혜택 발송, 안내 및 관련 문의 사항 응대</br>
+                            2) 이벤트 참여 내역 관리를 통한 혜택 중복 수령 방지 등</br>
+                            3) 광고성 정보 수신에 별도 동의한 자에 한하여 해커스어학원을 비롯한 해커스 교육그룹의 새로운 서비스 신상품이나 이벤트, 최신 정보 안내 등 신청자의 취향에 맞는 최적의 서비스를 제공하기 위함.</br>
+                            (해커스교육그룹: 해커스인강, 해커스프랩, 해커스톡, 해커스중국어, 해커스일본어, 해커스잡, 해커스금융, 해커스임용, 해커스공무원, 해커스경찰, 해커스소방, 해커스공인중개사, 해커스주택관리사, 해커스원격평생교육원, 해커스독학사, 해커스편입 등)</br></br>
+        
+                            2. 수집 및 이용하는 개인정보 항목 : 이름, 휴대폰번호, 해커스어학원 아이디</br></br>
+        
+                            3. 개인정보 보유/이용 기간: 수집한 개인정보는 수집 시로부터 3년간 이용하며,내역관리를 위해 추가 1년을 보관한 후 파기합니다. (총 4년 보유) 다만, 보유 및 이용기간 동안 개인정보 이용에 철회하시는 경우에는 그 즉시 파기합니다.</br></br>
+        
+                            4. 신청자는 개인정보 수집·이용을 거부할 수 있습니다. 단, 거부의 경우에는 빡살 라이브특강 신청이 제한됩니다.
+                        </div>
+                    </div>
+    
+                    <a href="javascript:" class="submit_btn po_r" onclick="submit();">
+                        <img class="book_img" src="../img/img2.png" alt="">
+                        <p>지금 무료로 받고 특강 신청하기 <span>go</span></p>
+                        <img class="click_img" src="../img/img3.png" alt="">
+                    </a>
+                </div>
+                <div class="info">
+                    [500만뷰] 김진태 선생님의 해커스 토익-----------------------  </br>
+                    [RC기준] 김진태 선생님의 해커스 토익--------------------
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+</body>
+</html>
